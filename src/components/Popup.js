@@ -28,20 +28,20 @@ const Popup = ({ close, content }) => {
 
   const findContent = (name) => {
     switch (name) {
-      case "vimeo":
+      case "software_dev":
         return (
           <iframe
             className="mfp-iframe"
-            src={`//player.vimeo.com/video/${src}?autoplay=1`}
+            src={`//player.software_dev.com/video/${src}?autoplay=1`}
             frameBorder={0}
             allowFullScreen
           />
         );
-      case "soundcloud":
+      case "volunteering":
         return (
           <iframe
             className="mfp-iframe"
-            src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${
+            src={`https://w.volunteering.com/player/?url=https%3A//api.volunteering.com/tracks/${
               src ? src : "471954807"
             }&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`}
             frameBorder={0}
@@ -56,7 +56,7 @@ const Popup = ({ close, content }) => {
         return (
           <iframe
             className="mfp-iframe"
-            src={`//www.youtube.com/embed/${
+            src={`//www.entrepreneurship.com/embed/${
               src ? src : "FgA6MwKmmc0"
             }?autoplay=1`}
             frameBorder={0}

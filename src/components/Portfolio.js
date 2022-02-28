@@ -4,11 +4,11 @@ import {
   fb,
   insta,
   maximize,
-  soundcloud,
+  volunteering,
   text,
   twitter,
-  vimeo,
-  youtube,
+  software_dev,
+  entrepreneurship,
 } from "../svgImage";
 import { aTagClick, dataImage } from "../utilits";
 import ModalBox from "./ModalBox";
@@ -69,78 +69,80 @@ const Portfolio = () => {
                 </a>
               </li>
               <li>
-                <a onClick={handleFilterKeyChange("vimeo")}>Vimeo</a>
+                <a onClick={handleFilterKeyChange("software_dev")}>Software Development</a>
               </li>
               <li>
-                <a onClick={handleFilterKeyChange("youtube")}>Youtube</a>
+                <a onClick={handleFilterKeyChange("entrepreneurship")}>Entrepreneurship</a>
               </li>
               <li>
-                <a onClick={handleFilterKeyChange("soundcloud")}>Soundcloud</a>
+                <a onClick={handleFilterKeyChange("volunteering")}>Volunteering</a>
               </li>
               <li>
-                <a onClick={handleFilterKeyChange("image")}>Image</a>
+                <a onClick={handleFilterKeyChange("image")}>Fun Projects</a>
               </li>
               <li>
-                <a onClick={handleFilterKeyChange("detail")}>Detail</a>
+                <a onClick={handleFilterKeyChange("detail")}>Others</a>
               </li>
             </ul>
           </div>
           <div className="portfolio_list">
             <ul className="gallery_zoom">
-              <li className="filter-item vimeo">
+              <li className="filter-item software_dev">
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/thumbs/1-1.jpg" alt="aali image" />
                     <div className="main" data-img-url="img/portfolio/1.jpg" />
                   </div>
                   <div className="overlay" />
-                  {vimeo}
+                  
                   <div className="details">
-                    <span>Vimeo</span>
-                    <h3>New Laptop</h3>
+                    <span>Python</span>
+                    <h3>Shooting Game</h3>
                   </div>
+
                   <a
-                    className="aali_tm_full_link popup-vimeo"
+                    className="aali_tm_full_link popup-software_dev"
                     href="#"
-                    onClick={() => showPopup("vimeo", "337293658")}
+                    onClick={() => showPopup("software_dev", "337293658")}
                   />
                 </div>
               </li>
-              <li className="filter-item youtube">
+
+              <li className="filter-item entrepreneurship">
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/thumbs/1-1.jpg" alt="aali image" />
                     <div className="main" data-img-url="img/portfolio/2.jpg" />
                   </div>
                   <div className="overlay" />
-                  {youtube}
+ 
                   <div className="details">
-                    <span>Youtube</span>
-                    <h3>Best Phone</h3>
+                    <span>Java + Android Studio</span>
+                    <h3>Time Management Pet Widget</h3>
                   </div>
                   <a
-                    className="aali_tm_full_link popup-youtube"
+                    className="aali_tm_full_link popup-entrepreneurship"
                     href="#"
-                    onClick={() => showPopup("youtube", "7e90gBu4pas")}
+                    onClick={() => showPopup("entrepreneurship", "7e90gBu4pas")}
                   />
                 </div>
               </li>
-              <li className="filter-item soundcloud">
+              <li className="filter-item volunteering">
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/thumbs/1-1.jpg" alt="aali image" />
                     <div className="main" data-img-url="img/portfolio/3.jpg" />
                   </div>
                   <div className="overlay" />
-                  {soundcloud}
+                  {volunteering}
                   <div className="details">
                     <span>Soundcloud</span>
                     <h3>Smart Headphone</h3>
                   </div>
                   <a
-                    className="aali_tm_full_link soundcloude_link mfp-iframe audio"
+                    className="aali_tm_full_link volunteeringe_link mfp-iframe audio"
                     href="#"
-                    onClick={() => showPopup("soundcloud", "471954807")}
+                    onClick={() => showPopup("volunteering", "471954807")}
                   />
                 </div>
               </li>

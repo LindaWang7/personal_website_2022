@@ -167,11 +167,11 @@ const Resume = () => {
         </div>
         <div className="media" data-background-style="video">
           {" "}
-          {/* Background Styles: "video" and "image" // Also you can use any youtube, vimeo, and local videos */}
+          {/* Background Styles: "video" and "image" // Also you can use any entrepreneurship, software_dev, and local videos */}
           <div
             className="video jarallax"
             data-speed={0}
-            data-jarallax-video="https://vimeo.com/337293658"
+            data-jarallax-video="https://software_dev.com/337293658"
           />
           <div
             className="image jarallax"
